@@ -18,8 +18,7 @@ php 7.2+
 To install this project, you need to run these commands
 
 ```
-cp config/telegramCredentials.example.php config/telegramCredentials.php
-cp config/facebookCrednetials.example.php config/facebookCredentials.php
+cp config/credentials.example.php config/credentials.php
 ```
 
 And fill it with corresponding data

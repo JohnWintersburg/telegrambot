@@ -1,3 +1,2 @@
-config/facebookCredentials.php
-config/telegramCredentials.php
-.idea
+config/credentials.php
+.idea/
