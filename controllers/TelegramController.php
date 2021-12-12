@@ -1,5 +1,7 @@
 <?php
 
+namespace contorllers\TelegramController;
+
 class TelegramController
 {
     public $botData;
@@ -8,7 +10,7 @@ class TelegramController
 
     public $botApiKey;
 
-    public function __construct(
+    public function __construct (
 
     ) {
         $botDataFile = ROOT . '/config/telegramCredentials.php';

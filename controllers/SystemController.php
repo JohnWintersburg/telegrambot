@@ -1,5 +1,7 @@
 <?php
 
+namespace controllers\SystemController;
+
 class SystemController {
     public function __construct()
     {

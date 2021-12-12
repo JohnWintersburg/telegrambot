@@ -1,19 +1,36 @@
 <?php
 
+namespace controllers\FacebookController;
+
+use components\graphql\Graphql;
+use controllers\SystemController\SystemController;
+use contorllers\TelegramController\TelegramController;
+
 class FacebookController
 {
+    /**
+     * @var Graphql
+     */
     public $graphql;
 
+    /**
+     * @var TelegramController
+     */
     public $telegram;
 
+    /**
+     * @var SystemController
+     */
     public $system;
 
     public function __construct(
-
+        Graphql $graphql,
+        TelegramController $telegram,
+        SystemController $system
     ) {
-        $this->graphql = new Graphql();
-        $this->telegram = new TelegramController();
-        $this->system = new SystemController();
+        $this->graphql = $graphql;
+        $this->telegram = $telegram;
+        $this->system = $system;
     }
 
     public function actionFetchLastPost()

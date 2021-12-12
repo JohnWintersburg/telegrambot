@@ -1,5 +1,6 @@
 <?php
 
+namespace components\graphql;
 
 class Graphql
 {
